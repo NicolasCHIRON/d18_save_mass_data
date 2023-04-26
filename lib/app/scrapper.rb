@@ -65,7 +65,7 @@ class Scrapper
     worksheet = spreadsheet.worksheets.first
     @hash_names_emails.to_a.each do |name, email|
       worksheet.insert_rows(worksheet.num_rows + 1, [[name, email]])
-      sleep(1)
+      sleep(2)
       worksheet.save
     end
     # session = GoogleDrive::Session.from_config("config.json")

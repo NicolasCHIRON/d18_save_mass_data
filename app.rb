@@ -39,6 +39,7 @@ case input
 
     scrapper_hash.save_as_spreadsheet
     puts "Les fichiers demandés ont été transférés. Nous vous remercions d'avoir utilisé nos services."
+    puts "Par contre, la limite de requête par minute fait que le transfert risque de prendre du temps, n'hésitez pas à prendre un café..."
     
   when 3
 
